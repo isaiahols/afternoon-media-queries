@@ -1,0 +1,208 @@
+/* #fed136 yellow */
+
+/* #fff white */
+
+/* #212529 grey */
+
+/* header area */
+
+header {
+    background: #212529;
+    min-height: 60px;
+    width: 100vw;
+    color: #fed136;
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+}
+
+header>section {
+    height: 100%;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto
+}
+
+.menu {
+    width: 90px;
+    height: 40px;
+    background: #fed136;
+    font-size: .6em;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuCenter {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burgerMenu {
+    height: 12px;
+    width: 15px;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger {
+    height: 2.5px;
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+}
+
+nav {
+    display: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.dropDown {
+    height: 0;
+    overflow: hidden;
+    background: #212529;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 0 20px;
+}
+
+.dropDownOn {
+    height: 200px
+}
+
+/* top main section */
+
+.topSection {
+    background: #212529 url("https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg");
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+.topSectionContent {
+    height: 100%;
+    width: 90%;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topSectionContent>h2 {
+    font-size: 1.4em;
+    margin-top: 25px;
+}
+
+.topSectionContent>h1 {
+    font-size: 3.3em;
+    margin-top: 25px;
+}
+
+.topSectionContent>button {
+    background: #fed136;
+    height: 70px;
+    width: 230px;
+    margin-top: 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.iconHolder {
+    background: #fed136;
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+}
+
+/* .fa-shopping-cart {
+    width: 30px;
+} */
+
+/*  */
+
+/*  */
+
+/* cannot figure out how to use icons from fontAwesome */
+
+/*  */
+
+/*  */
+
+/* media queries */
+
+@media (min-width: 576px) and (max-width: 768px) {
+    header>section {
+        width: 600px;
+    }
+    .topSectionContent {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    header>section {
+        /* padding: 0 60px; */
+        width: 750px;
+    }
+    .topSection {
+        height: 830px;
+        font-size: 25px;
+    }
+    .topSectionContent>button {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        padding-top: 30px;
+        background: rgba(196, 196, 196, 0)
+    }
+    header>section {
+        font-size: 1.7em;
+        width: 1050px;
+    }
+    nav {
+        display: flex;
+    }
+    .menu,
+    .dropDown,
+    .dropDownOn {
+        display: none;
+    }
+    .topSection {
+        height: 760px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header>section {
+        width: 1250px;
+    }
+}
